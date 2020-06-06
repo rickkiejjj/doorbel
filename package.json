@@ -1,0 +1,66 @@
+{
+  "_from": "homebridge-doorbell@latest",
+  "_id": "homebridge-doorbell@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-cdJ2DHoVWNGXjmHWe3U5wsXQl6pJcQN11GdRKWqJbXLJSqLs7+ubb+jVMa5YxhEVnU5zKho4SsA0UOO/oMloOg==",
+  "_location": "/homebridge-doorbell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "homebridge-doorbell@latest",
+    "name": "homebridge-doorbell",
+    "escapedName": "homebridge-doorbell",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/homebridge-doorbell/-/homebridge-doorbell-1.0.1.tgz",
+  "_shasum": "bf1853ea46473fb409d5144482d49beee8d68018",
+  "_spec": "homebridge-doorbell@latest",
+  "_where": "/usr/local/lib",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/rickkiejjj/doorbell/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A doorbell where the switch button registers as an input and the bell is activated by a relay. Using automationHAT.",
+  "homepage": "https://github.com/rickkiejjj/doorbell#readme",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "name": "homebridge-doorbell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickkiejjj/doorbell.git"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "dist:clean": "rm -rf dist && mkdir dist && cp src/gate-latch-monitor.py dist/gate-latch-monitor.py ",
+    "build": "npm run dist:clean && tsc",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "python-shell": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@types/python-shell": "^0.4.2",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  },
+  "version": "1.0.2"
+}
